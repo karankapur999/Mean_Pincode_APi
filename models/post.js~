@@ -1,0 +1,9 @@
+var db = require('../db')
+
+var BlogPost= db.Schema({
+ pincode: number
+  });
+
+var master_data = db.model('master_data',BlogPost,'master_data')
+module.exports = master_data	
+
